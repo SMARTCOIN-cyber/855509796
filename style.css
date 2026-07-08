@@ -1,0 +1,1169 @@
+/* =====================================================
+   SGK GLOBAL SHIPPING SERVICES TRACKING PORTAL
+===================================================== */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+html{
+scroll-behavior:smooth;
+}
+
+body{
+
+font-family:'Poppins',sans-serif;
+
+background:#eef2f5;
+
+background-image:
+linear-gradient(rgba(255,255,255,.9),rgba(255,255,255,.9)),
+url("https://www.transparenttextures.com/patterns/cubes.png");
+
+color:#333;
+
+}
+
+
+
+/* ===========================
+TOP STRIP
+=========================== */
+
+.top-strip{
+
+background:#0b5d56;
+
+color:white;
+
+height:45px;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:0 35px;
+
+font-size:14px;
+
+letter-spacing:.5px;
+
+}
+
+.secure i{
+
+margin-right:8px;
+
+}
+
+.version{
+
+opacity:.9;
+
+}
+
+
+
+/* ===========================
+MAIN PAGE
+=========================== */
+
+.page{
+
+width:95%;
+
+max-width:1300px;
+
+margin:35px auto;
+
+background:white;
+
+border-radius:18px;
+
+overflow:hidden;
+
+box-shadow:
+
+0 20px 60px rgba(0,0,0,.12);
+
+}
+
+
+
+/* ===========================
+HEADER
+=========================== */
+
+.booking-header{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:35px 45px;
+
+background:white;
+
+border-bottom:5px solid #0b5d56;
+
+}
+
+.logo-area img{
+
+width:360px;
+
+max-width:100%;
+
+}
+
+.title-area{
+
+text-align:right;
+
+}
+
+.title-area h1{
+
+font-size:42px;
+
+font-weight:700;
+
+color:#222;
+
+letter-spacing:1px;
+
+}
+
+.title-area p{
+
+margin-top:8px;
+
+color:#777;
+
+font-size:16px;
+
+}
+
+
+
+/* ===========================
+SECTION TITLE
+=========================== */
+
+.section-title{
+
+background:#0b5d56;
+
+color:white;
+
+padding:14px 28px;
+
+font-size:18px;
+
+font-weight:600;
+
+letter-spacing:.5px;
+
+}
+
+
+
+/* ===========================
+BOOKING TABLE
+=========================== */
+
+.booking-table{
+
+width:100%;
+
+border-collapse:collapse;
+
+}
+
+.booking-table th{
+
+width:17%;
+
+background:#f3f5f7;
+
+font-size:14px;
+
+text-align:left;
+
+padding:16px;
+
+border:1px solid #d8dde3;
+
+font-weight:600;
+
+}
+
+.booking-table td{
+
+padding:16px;
+
+border:1px solid #d8dde3;
+
+font-size:14px;
+
+background:white;
+
+}
+
+
+
+/* ===========================
+STATUS CARD
+=========================== */
+
+.status-card{
+
+margin:35px;
+
+border-radius:18px;
+
+background:
+
+linear-gradient(135deg,#0b5d56,#009688);
+
+color:white;
+
+padding:35px;
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+box-shadow:
+
+0 20px 45px rgba(0,150,136,.25);
+
+}
+
+.status-left{
+
+width:100%;
+
+}
+
+.status-left h3{
+
+font-size:18px;
+
+margin-bottom:12px;
+
+font-weight:500;
+
+}
+
+.status-left h2{
+
+font-size:38px;
+
+margin-bottom:15px;
+
+font-weight:700;
+
+}
+
+.status-left p{
+
+line-height:1.8;
+
+font-size:15px;
+
+}
+
+.status-circle{
+
+width:150px;
+
+height:150px;
+
+background:white;
+
+border-radius:50%;
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+font-size:42px;
+
+font-weight:bold;
+
+color:#009688;
+
+border:8px solid rgba(255,255,255,.25);
+
+box-shadow:
+
+0 12px 35px rgba(0,0,0,.18);
+
+}
+
+
+
+/* ===========================
+PROGRESS BAR
+=========================== */
+
+.progress-container{
+
+margin:0 35px 40px;
+
+}
+
+.progress-bar{
+
+width:100%;
+
+height:26px;
+
+background:#d8dde3;
+
+border-radius:40px;
+
+overflow:hidden;
+
+}
+
+.progress-fill{
+
+height:100%;
+
+width:0;
+
+background:
+
+linear-gradient(90deg,#00c853,#00e676);
+
+animation:progressFill 3s forwards;
+
+}
+
+@keyframes progressFill{
+
+from{
+
+width:0;
+
+}
+
+to{
+
+width:40%;
+
+}
+
+}
+
+.progress-label{
+
+margin-top:14px;
+
+font-weight:600;
+
+color:#0b5d56;
+
+}
+
+
+
+/* ===========================
+SUMMARY CARDS
+=========================== */
+
+.cards{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:25px;
+
+padding:0 35px 40px;
+
+}
+
+.card{
+
+background:white;
+
+padding:30px;
+
+text-align:center;
+
+border-radius:16px;
+
+box-shadow:
+
+0 10px 30px rgba(0,0,0,.08);
+
+transition:.35s;
+
+cursor:pointer;
+
+}
+
+.card:hover{
+
+transform:translateY(-8px);
+
+box-shadow:
+
+0 20px 45px rgba(0,0,0,.15);
+
+}
+
+.card i{
+
+font-size:34px;
+
+color:#0b5d56;
+
+margin-bottom:18px;
+
+}
+
+.card h4{
+
+margin-bottom:12px;
+
+font-size:18px;
+
+color:#222;
+
+}
+
+.card p{
+
+font-weight:600;
+
+color:#555;
+
+}
+
+
+
+/* ===========================
+ROUTE
+=========================== */
+
+.route-card{
+
+margin:35px;
+
+background:white;
+
+border-radius:18px;
+
+overflow:hidden;
+
+box-shadow:
+
+0 15px 35px rgba(0,0,0,.08);
+
+}
+
+.route-header{
+
+display:flex;
+
+justify-content:space-between;
+
+align-items:center;
+
+padding:35px;
+
+}
+
+.route-header h3{
+
+font-size:24px;
+
+color:#0b5d56;
+
+margin-bottom:8px;
+
+}
+
+.route-header p{
+
+color:#777;
+
+}
+
+.plane-animation{
+
+font-size:50px;
+
+color:#009688;
+
+animation:fly 2s ease-in-out infinite alternate;
+
+}
+
+@keyframes fly{
+
+from{
+
+transform:translateX(-18px);
+
+}
+
+to{
+
+transform:translateX(18px);
+
+}
+
+}
+
+.map-box iframe{
+
+width:100%;
+
+height:420px;
+
+border:none;
+
+}/* ===========================
+TIMELINE
+=========================== */
+
+.timeline{
+
+padding:35px;
+
+}
+
+.timeline-item{
+
+display:flex;
+
+gap:22px;
+
+padding:22px;
+
+margin-bottom:22px;
+
+border-radius:15px;
+
+background:white;
+
+box-shadow:0 10px 25px rgba(0,0,0,.08);
+
+transition:.35s;
+
+border-left:6px solid #d5d5d5;
+
+}
+
+.timeline-item:hover{
+
+transform:translateX(10px);
+
+box-shadow:0 18px 35px rgba(0,0,0,.12);
+
+}
+
+.timeline-item.complete{
+
+border-left:6px solid #2ecc71;
+
+}
+
+.timeline-item.active{
+
+border-left:6px solid #2ecc71;
+
+background:#f1fffc;
+
+}
+
+.timeline-item.pending{
+
+border-left:6px solid #2ecc71;
+
+}
+
+.timeline-item .icon{
+
+width:65px;
+
+height:65px;
+
+border-radius:50%;
+
+background:#0b5d56;
+
+color:white;
+
+display:flex;
+
+align-items:center;
+
+justify-content:center;
+
+font-size:24px;
+
+flex-shrink:0;
+
+}
+
+.timeline-item h3{
+
+font-size:20px;
+
+margin-bottom:8px;
+
+color:#222;
+
+}
+
+.timeline-item p{
+
+font-weight:600;
+
+color:#0b5d56;
+
+margin-bottom:6px;
+
+}
+
+.timeline-item span{
+
+font-size:14px;
+
+color:#666;
+
+line-height:1.6;
+
+}
+
+
+
+/* ===========================
+LIVE MONITOR
+=========================== */
+
+.monitor-grid{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:25px;
+
+padding:35px;
+
+}
+
+.monitor-card{
+
+background:white;
+
+border-radius:16px;
+
+padding:28px;
+
+text-align:center;
+
+box-shadow:0 12px 28px rgba(0,0,0,.08);
+
+transition:.3s;
+
+}
+
+.monitor-card:hover{
+
+transform:translateY(-8px);
+
+}
+
+.monitor-card i{
+
+font-size:34px;
+
+color:#009688;
+
+margin-bottom:15px;
+
+}
+
+.monitor-card h4{
+
+margin-bottom:10px;
+
+color:#222;
+
+}
+
+.monitor-card p{
+
+font-weight:600;
+
+color:#555;
+
+}
+
+
+
+/* ===========================
+TRACKING LOG
+=========================== */
+
+.tracking-log{
+
+padding:35px;
+
+}
+
+.tracking-log h2{
+
+margin-bottom:25px;
+
+color:#0b5d56;
+
+}
+
+.tracking-log table{
+
+width:100%;
+
+border-collapse:collapse;
+
+overflow:hidden;
+
+border-radius:15px;
+
+}
+
+.tracking-log th{
+
+background:#0b5d56;
+
+color:white;
+
+padding:16px;
+
+font-weight:600;
+
+}
+
+.tracking-log td{
+
+padding:16px;
+
+border-bottom:1px solid #ececec;
+
+background:white;
+
+}
+
+.tracking-log tr:nth-child(even){
+
+background:#fafafa;
+
+}
+
+.tracking-log tr:hover{
+
+background:#eefaf7;
+
+}
+
+
+
+/* ===========================
+LOADING SECTION
+=========================== */
+
+.loading-section{
+
+text-align:center;
+
+padding:45px;
+
+}
+
+.loader{
+
+width:70px;
+
+height:70px;
+
+margin:auto;
+
+border-radius:50%;
+
+border:7px solid #d8d8d8;
+
+border-top:7px solid #009688;
+
+animation:spin 1s linear infinite;
+
+}
+
+@keyframes spin{
+
+100%{
+
+transform:rotate(360deg);
+
+}
+
+}
+
+.loading-section h3{
+
+margin-top:25px;
+
+color:#0b5d56;
+
+font-size:22px;
+
+}
+
+.loading-section p{
+
+margin-top:12px;
+
+color:#666;
+
+}
+
+
+
+/* ===========================
+NOTICE BOX
+=========================== */
+
+.notice-box{
+
+margin:0 35px 35px;
+
+background:#e8fff6;
+
+border-left:6px solid #009688;
+
+padding:22px;
+
+border-radius:12px;
+
+font-size:15px;
+
+line-height:1.8;
+
+color:#333;
+
+}
+
+.notice-box i{
+
+color:#009688;
+
+margin-right:10px;
+
+}
+
+
+
+/* ===========================
+FOOTER
+=========================== */
+
+footer{
+
+margin-top:20px;
+
+background:#063f3c;
+
+color:white;
+
+}
+
+.footer-top{
+
+display:grid;
+
+grid-template-columns:repeat(4,1fr);
+
+gap:30px;
+
+padding:45px;
+
+}
+
+.footer-top h3,
+
+.footer-top h4{
+
+margin-bottom:10px;
+
+}
+
+.footer-top p{
+
+opacity:.9;
+
+line-height:1.8;
+
+}
+
+.footer-bottom{
+
+text-align:center;
+
+padding:20px;
+
+border-top:1px solid rgba(255,255,255,.15);
+
+font-size:14px;
+
+opacity:.85;
+
+}
+
+
+
+/* ===========================
+SCROLLBAR
+=========================== */
+
+::-webkit-scrollbar{
+
+width:10px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#009688;
+
+border-radius:20px;
+
+}
+
+::-webkit-scrollbar-track{
+
+background:#ececec;
+
+}
+
+
+
+/* ===========================
+RESPONSIVE
+=========================== */
+
+@media(max-width:1100px){
+
+.cards{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.monitor-grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+.footer-top{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+@media(max-width:768px){
+
+.top-strip{
+
+flex-direction:column;
+
+height:auto;
+
+padding:12px;
+
+gap:8px;
+
+}
+
+.booking-header{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.title-area{
+
+text-align:center;
+
+margin-top:20px;
+
+}
+
+.title-area h1{
+
+font-size:30px;
+
+}
+
+.logo-area img{
+
+width:260px;
+
+}
+
+.status-card{
+
+flex-direction:column;
+
+text-align:center;
+
+gap:25px;
+
+}
+
+.status-left{
+
+width:100%;
+
+}
+
+.route-header{
+
+flex-direction:column;
+
+gap:25px;
+
+text-align:center;
+
+}
+
+.cards{
+
+grid-template-columns:1fr;
+
+padding:20px;
+
+}
+
+.monitor-grid{
+
+grid-template-columns:1fr;
+
+padding:20px;
+
+}
+
+.timeline{
+
+padding:20px;
+
+}
+
+.timeline-item{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.timeline-item .icon{
+
+margin:auto;
+
+}
+
+.footer-top{
+
+grid-template-columns:1fr;
+
+text-align:center;
+
+}
+
+.booking-table{
+
+display:block;
+
+overflow-x:auto;
+
+white-space:nowrap;
+
+}
+
+.notice-box{
+
+margin:20px;
+
+}
+
+}
+
+@media(max-width:480px){
+
+.page{
+
+width:98%;
+
+margin:10px auto;
+
+border-radius:10px;
+
+}
+
+.title-area h1{
+
+font-size:24px;
+
+}
+
+.status-circle{
+
+width:110px;
+
+height:110px;
+
+font-size:30px;
+
+}
+
+.progress-container{
+
+margin:20px;
+
+}
+
+.route-card{
+
+margin:20px;
+
+}
+
+.map-box iframe{
+
+height:260px;
+
+}
+
+}
