@@ -22,7 +22,7 @@ const statusMessages = [
     "Verifying Booking Number 855509796...",
     "Booking successfully verified.",
     "Checking latest shipment activity...",
-    "Cargo transit in progress.",
+    "Cargo transit now complete.",
     "Synchronizing cargo movement...",
     "Updating delivery estimate...",
     "Latest checkpoint successfully received."
@@ -77,7 +77,7 @@ window.addEventListener("load", () => {
 
         setTimeout(() => {
 
-            progress.style.width = "40%";
+            progress.style.width = "100%";
 
         }, 300);
 
@@ -210,10 +210,10 @@ console.log("%cSGK Global Shipping Tracking Portal",
 console.log("%cBooking Number: 855509796",
 "color:#444;font-size:16px;");
 
-console.log("%cShipment Status: TRANSIT IN PROGRESS",
+console.log("%cShipment Status: TRANSIT NOW COMPLETE",
 "color:green;font-size:16px;");
 
-console.log("%cProgress: 40%",
+console.log("%cProgress: 100%",
 "color:#009688;font-size:16px;");
 
 // ==============================
